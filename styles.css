@@ -1,0 +1,455 @@
+/* 🔁 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🔝 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white; /* or any solid color */
+  width: 100%;
+  position: sticky;  /* 👈 makes it sticky */
+  top: 0;            /* 👈 stick to the top */
+  z-index: 1000;     /* 👈 ensures it stays above all other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
+
+
+.brand {
+  font-size: 2rem;
+  color: rgb(255, 40, 40);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔍 Search Box */
+.search-box {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid red;
+  background-color: white;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/482/482631.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+  color: red;
+}
+
+/* 🔘 Buttons */
+.nav-buttons .btn {
+  margin-left: 15px;
+  padding: 10px 22px;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #cc0000;
+}
+
+/* 🌐 Hero Wrapper with Full Background */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 67vh;
+  background-image: url('food.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* 📚 Sidebar (floating on image) */
+.hero-sidebar {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 100%;
+  padding: 30px 15px;
+  backdrop-filter: blur(5px);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Sidebar menu */
+.side-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.side-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.3s;
+  display: block;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
+
+/* 🖼️ Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+.hero-text {
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 9rem;
+  margin-bottom: -30px;
+}
+
+.hero-text p1 {
+  font-size: 3rem;
+}
+.hero-text p2 {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🍽️ Top Picks Section */
+.top-picks {
+  padding: 50px 60px;
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.top-picks h2 {
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 30px;
+  margin-top: -5px;
+
+}
+
+/* 🎴 Grid for Cards */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffecec;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: red;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+
+
+/* 🚚 Delivery Banner Section */
+.delivery-banner {
+  height: 120vh;
+  background-image: url('nextback.avif'); /* Replace with your image name */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  clip-path: inset(0 0 450px 0); /* trims the bottom */
+}
+
+.delivery-text h2 {
+  font-size: 7rem;
+  margin-bottom: 150;
+  color: white;
+  text-align: center;
+  font-weight: 1000;
+  margin-left: 50;
+  margin-top: -200px;
+  
+
+}
+
+.delivery-text p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+.about-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf4f5; /* soft full background */
+  padding: -20px;
+  margin-top: -500px;
+
+}
+
+.about-box {
+  background-color: #ffe4ec; /* pastel pink box */
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-box h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #e75480; /* cute pink heading */
+  text-shadow: 1px 1px 3px #ffc0cb;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.about-box p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+
+
+.top-cuisines {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.top-cuisines h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: rgb(190, 34, 34);
+}
+
+.cuisine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cuisine-card {
+  background-color: rgb(190, 34, 34);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cuisine-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1px;
+}
+
+.stars {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Accordion Styles */
+.accordion {
+  background-color: white;
+  color: rgb(161, 29, 29);
+  cursor: pointer;
+  padding: 20px 15px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.accordion:hover {
+  background-color: #ffcccc;
+}
+
+.panel {
+  padding: 10px 0;
+  display: none;
+  color: white;
+}
+
+
+/* 🔚 Updated Footer Styling */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 50px 20px 30px;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+.footer-brand {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+}
+
+.footer-column.social .icons {
+  margin-bottom: 15px;
+}
+
+.footer-column.social .icons a {
+  margin-right: 12px;
+}
+
+.footer-column.social .icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.app-badge {
+  width: 150px;
+  margin: 10px 0;
+  display: block;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+.custom-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  position: relative;
+}
+
+.custom-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollMarquee 15s linear infinite;
+}
+
+.custom-marquee p {
+  display: inline;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

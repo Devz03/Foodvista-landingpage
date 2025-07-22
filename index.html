@@ -1,121 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>User Registration Form</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
-
-    .form-container {
-      background-color: white;
-      padding: 30px 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      width: 100%;
-      max-width: 400px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #555;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"],
-    input[type="tel"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      transition: border 0.3s;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #5cacee;
-      outline: none;
-    }
-
-    .button-group {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .btn {
-      width: 48%;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .btn-submit {
-      background-color: #5cacee;
-      color: white;
-    }
-
-    .btn-cancel {
-      background-color: #ccc;
-      color: #333;
-    }
-
-    .btn:hover {
-      opacity: 0.9;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodVista | Devanshi Jangra</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="form-container">
-    <h2>User Registration</h2>
-    <form>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+  <!-- 🔝 Top Navbar -->
+  <nav class="navbar">
+    <div class="brand"><img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" height="25" style="margin-right: 10px;">FoodVista</div>
+    <input type="text" class="search-box" id="searchInput" placeholder="Search for restaurants or dishes..." />
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+    <div class="nav-buttons">
+      <button class="btn">Login</button>
+      <button class="btn">Sign Up</button>
+    </div>
+  </nav>
 
-      <label for="birthdate">Birthdate</label>
-      <input type="date" id="birthdate" name="birthdate" required>
+  <!-- 🌐 Hero Section Wrapper (Sidebar + Hero Image) -->
+  <div class="hero-wrapper">
 
-      <label for="address">Address</label>
-      <textarea id="address" name="address" rows="3" required></textarea>
+    <!-- 📚 Sidebar Overlay -->
+    <div class="hero-sidebar">
+      <ul class="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Top Picks</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <!-- 🖼️ Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>FoodVista</h1>
+        <p1>Your favorite meals, all in one place</p1><br>
+        <p2>~Devanshi Jangra</p2>
 
-      <div class="button-group">
-        <button type="submit" class="btn btn-submit">Submit</button>
-        <button type="reset" class="btn btn-cancel">Cancel</button>
       </div>
-    </form>
+    </section>
+
+
   </div>
+  <!-- 🎉 Offers Marquee -->
+<!-- 🔁 Modern Marquee -->
+<div class="custom-marquee-container">
+  <div class="custom-marquee">
+    <p>
+      🎁 New Customers: First 3 Orders - No Delivery Charges! &nbsp;&nbsp;&nbsp;
+      🍱 10% Off on Every Restaurant Cuisine on Orders Above ₹799! &nbsp;&nbsp;&nbsp;
+      🎉 Enjoy Exclusive Offers Daily on FoodVista!
+    </p>
+  </div>
+</div>
+
+
+
+ <!-- 🍽️ Top Picks Section -->
+<section class="top-picks">
+  <h2>Your Nearby Restaurants</h2>
+  <div class="restaurant-grid">
+
+    <!-- Card 1 -->
+    <div class="card" data-name="pizza mania">
+      <img src="images/1.jpg" alt="Pizza Mania">
+      <h3>Pizza Mania</h3>
+      <p>Sector 17, Chandigarh</p>
+      <p>Cheesy delights with loaded toppings.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-name="biryani house">
+      <img src="images/biryani.jpg" alt="Biryani House">
+      <h3>Biryani House</h3>
+      <p>Sector 22, Chandigarh</p>
+      <p>Authentic Hyderabadi biryani flavors.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-name="burger town">
+      <img src="images/b.jpeg" alt="Burger Town">
+      <h3>Burger Town</h3>
+      <p>Sector 35, Chandigarh</p>
+      <p>Juicy burgers with crispy fries.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-name="noodle bar">
+      <img src="images/1.jpg" alt="Noodle Bar">
+      <h3>Noodle Bar</h3>
+      <p>Sector 26, Chandigarh</p>
+      <p>Spicy Asian noodles & ramen bowls.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" data-name="cafe brewz">
+      <img src="images/c.jpeg" alt="Cafe Brewz">
+      <h3>Cafe Brewz</h3>
+      <p>Sector 8, Chandigarh</p>
+      <p>Chill vibes & amazing coffee blends.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" data-name="tandoori flames">
+      <img src="images/tikka.jpg" alt="Tandoori Flames">
+      <h3>Tandoori Flames</h3>
+      <p>Sector 15, Chandigarh</p>
+      <p>Tandoori platters straight from the grill.</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card" data-name="sushi den">
+      <img src="images/s.jpeg" alt="Sushi Den">
+      <h3>Sushi Den</h3>
+      <p>Sector 9, Chandigarh</p>
+      <p>Fresh sushi rolls & Japanese treats.</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card" data-name="creamology">
+      <img src="images/lounge.jpg" alt="Creamology">
+      <h3>Creamology</h3>
+      <p>Sector 19, Chandigarh</p>
+      <p>Premium ice cream & frozen desserts.</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card" data-name="pasta hub">
+      <img src="images/pasta.webp" alt="Pasta Hub">
+      <h3>Pasta Hub</h3>
+      <p>Sector 11, Chandigarh</p>
+      <p>Italian pasta tossed to perfection.</p>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card" data-name="chatkara chaat">
+      <img src="images/samosa-chaat.webp" alt="Chatkara Chaat">
+      <h3>Chatkara Chaat</h3>
+      <p>Sector 20, Chandigarh</p>
+      <p>Desi street food with a twist.</p>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card" data-name="streak house">
+      <img src="images/black-angus-chicago-cut.jpg" alt="Steak House">
+      <h3>Steak House</h3>
+      <p>Sector 40, Chandigarh</p>
+      <p>Grilled steaks & BBQ flavors.</p>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card" data-name="shakes bakes">
+      <img src="images/images.jpeg" alt="Shakes & Bakes">
+      <h3>Shakes & Bakes</h3>
+      <p>Sector 10, Chandigarh</p>
+      <p>Thick shakes, cakes & desserts.</p>
+    </div>
+
+  </div>
+</section>
+<!-- 🚚 Quick Delivery Banner -->
+<section class="delivery-banner">
+  <div class="delivery-text">
+    <h2>Quick Delivery</h2>
+    <p>Your cravings, delivered fast and fresh!</p>
+  </div>
+</section>
+<section class="about-section">
+  <div class="about-box">
+    <h2>About</h2>
+    <p>
+      Welcome to <strong>FoodVista</strong> — your one-stop destination for seamless, joyful food experiences. At FoodVista, we believe food is not just about taste, but about moments, memories, and magic. Whether you're working late, hosting friends, or simply craving your favorite meal — we’re here to bring it right to your doorstep.
+      <br><br>
+      Our platform offers real-time order tracking, high-quality food images, detailed restaurant descriptions, and access to the best eateries in town. We’ve partnered with top-rated and local gems to ensure every dish you order is fresh, delicious, and timely.
+      <br><br>
+      Built by a passionate team of food lovers and tech enthusiasts, FoodVista is more than a service — it’s a promise of convenience, trust, and happiness. We’re committed to creating a smarter, faster, and more delightful food journey for our customers.
+      <br><br>
+      Join us as we bring flavor, fun, and freshness to your screen — because at FoodVista, every order is a celebration.
+    </p>
+  </div>
+</section>
+<!-- 🍱 Top Cuisines Section -->
+<section class="top-cuisines">
+  <h2>Top Cuisines</h2>
+  <div class="cuisine-grid">
+
+    <!-- Cuisine Card Example -->
+    <div class="cuisine-card">
+      <h3>Italian</h3>
+      <div class="stars">★★★★★</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Pasta Hub, Pizza Mania, Café Roma</p>
+      </div>
+    </div>
+
+    <div class="cuisine-card">
+      <h3>Chinese</h3>
+      <div class="stars">★★★★☆</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Noodle Bar, Wok Express, Dragon House</p>
+      </div>
+    </div>
+
+    <div class="cuisine-card">
+      <h3>Indian</h3>
+      <div class="stars">★★★★★</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Tandoori Flames, Biryani House, Chaat Street</p>
+      </div>
+    </div>
+
+    <div class="cuisine-card">
+      <h3>Mexican</h3>
+      <div class="stars">★★★☆☆</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Taco Zone, Burrito Bar, MexiGo</p>
+      </div>
+    </div>
+
+    <div class="cuisine-card">
+      <h3>American</h3>
+      <div class="stars">★★★★☆</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Burger Town, Steak House, Shake Shack</p>
+      </div>
+    </div>
+
+    <div class="cuisine-card">
+      <h3>Desserts</h3>
+      <div class="stars">★★★★★</div>
+      <button class="accordion">Check Top Restaurants</button>
+      <div class="panel">
+        <p>Creamology, Shakes & Bakes, Sweet Treats</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 🔚 Revamped Footer -->
+<footer class="footer">
+  <div class="footer-brand">
+    <h1>🍽️ FoodVista</h1>
+  </div>
+
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li>Who we are</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Report Fraud</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For Foodies</h4>
+      <ul>
+        <li>Code of Conduct</li>
+        <li>Community</li>
+        <li>Blogger Help</li>
+        <li>Mobile Apps</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For Restaurants</h4>
+      <ul>
+        <li>Add Restaurant</li>
+        <li>Claim your Listing</li>
+        <li>Business App</li>
+        <li>Restaurant Widgets</li>
+        <li>Products for Businesses</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For You</h4>
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Security</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+
+    <div class="footer-column social">
+      <h4>Social Links</h4>
+      <div class="icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="app-badge">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="app-badge">
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.<br>
+      All trademarks are properties of their respective owners. 2025 © FoodVista™. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".restaurant-grid .card");
+
+    searchInput.addEventListener("input", () => {
+      const searchValue = searchInput.value.toLowerCase();
+
+      cards.forEach(card => {
+        const name = card.getAttribute("data-name").toLowerCase();
+        if (name.includes(searchValue)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
