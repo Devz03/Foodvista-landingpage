@@ -6,18 +6,18 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* 🔝 Navbar */
+/*  Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: white; /* or any solid color */
+  background-color: white; 
   width: 100%;
-  position: sticky;  /* 👈 makes it sticky */
-  top: 0;            /* 👈 stick to the top */
-  z-index: 1000;     /* 👈 ensures it stays above all other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+  position: sticky;  
+  top: 0;          
+  z-index: 1000;    
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-/* 🔍 Search Box */
+/* Search Box */
 .search-box {
   padding: 10px 20px;
   border-radius: 30px;
@@ -64,19 +64,19 @@
   background-color: #cc0000;
 }
 
-/* 🌐 Hero Wrapper with Full Background */
+
 .hero-wrapper {
   position: relative;
   width: 100%;
   height: 67vh;
-  background-image: url('food.jpg'); /* Replace with your image */
+  background-image: url('food.jpg'); 
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
 }
 
-/* 📚 Sidebar (floating on image) */
+/* Sidebar */
 .hero-sidebar {
   width: 200px;
   background-color: rgba(255, 255, 255, 0.15);
@@ -118,7 +118,7 @@
   text-decoration: underline;
 }
 
-/* 🖼️ Hero Section */
+/*  Hero Section */
 .hero {
   flex: 1;
   display: flex;
