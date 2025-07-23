@@ -24,7 +24,7 @@ It showcases a modern UI/UX layout with the following features:
 
 🚀 Live Preview
 
-🔗 [View the website on Netlify](https://foodvista-devanshijangra-821100.netlify.app/)
+🔗 [View the website on Netlify](https://foodvista-devanshijangra-fb61f3.netlify.app/)
 
 ---
 
